@@ -1,0 +1,93 @@
+/* Estilo para o container principal */
+.container {
+  display: flex;
+  background-color: #f0f0f0; /* Cor de fundo clara */
+  border-radius: 10px; /* Borda mais arredondada */
+  padding: 1em; /* Espaçamento aumentado */
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+/* Estilo para o avatar e a imagem */
+.label-avatar {
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative; /* Adicionado */
+}
+
+.label-avatar input {
+  display: none;
+}
+
+.label-avatar span {
+  z-index: 99;
+  position: absolute;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.label-avatar:hover span {
+  opacity: 1;
+  transform: scale(1.2); /* Ajustado o valor de escala */
+}
+
+/* Estilo para a imagem do perfil */
+.form-profile img {
+  margin-bottom: 1em;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 100%; /* Garante que a imagem não vaze do contêiner */
+}
+
+/* Estilo para os rótulos */
+.form-profile label {
+  margin-bottom: 0.5em;
+  font-size: 1.2em; /* Reduzido o tamanho da fonte */
+  color: #292929; /* Cor do texto */
+}
+
+/* Estilo para inputs, textarea e select */
+.form-profile input,
+.form-profile textarea,
+.form-profile select {
+  margin-bottom: 1em;
+  padding: 0.7em;
+  border: 1px solid #ccc; /* Adicionada uma borda para melhor visibilidade */
+  border-radius: 5px;
+  max-width: 100%; /* Evita que elementos vazem do contêiner */
+  background-color: #ffffff; /* Fundo branco */
+  color: #292929; /* Cor do texto */
+}
+
+/* Estilo para inputs desabilitados */
+.form-profile input:disabled {
+  cursor: not-allowed;
+  background-color: #f2f2f2; /* Fundo cinza para elementos desabilitados */
+  color: #999999; /* Cor do texto mais clara para elementos desabilitados */
+}
+
+/* Estilo para o botão de logout */
+.logout-btn {
+  padding: 8px 20px;
+  border: 1px solid #121212;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 1.2em; /* Tamanho da fonte reduzido */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Removido sublinhado padrão */
+  color: #121212; /* Cor do texto */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+}
+
+.logout-btn:hover {
+  background-color: #121212;
+  color: #fff; /* Cor do texto alterada para branco no hover */
+}

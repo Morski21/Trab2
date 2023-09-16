@@ -1,0 +1,87 @@
+/* Estilo para o container principal */
+.container-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6aabc9; /* Cor de fundo suave */
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo para a área de login */
+.login {
+  background-color: #fff; /* Fundo branco */
+  width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  text-align: center;
+}
+
+/* Estilo para a área de login (quando a tela é menor) */
+@media (max-width: 768px) {
+  .login {
+    width: 90%;
+  }
+}
+
+/* Estilo para a área de cabeçalho */
+.login-header {
+  background-color: #f0f0f0; /* Cor de cabeçalho clara */
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.login-header img {
+  width: 170px;
+  height: 130px;
+}
+
+/* Estilo para o formulário */
+form {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #181c2e; /* Mantém a cor original para o título */
+}
+
+/* Estilo para campos de entrada */
+.login input {
+  margin-bottom: 1rem;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f0f0f0; /* Cor de fundo clara */
+}
+
+/* Estilo para o botão */
+form button {
+  height: 40px;
+  border: 6;
+  border-radius: 10px;
+  background-color: #384ca7;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Estilo para o link abaixo do formulário */
+.login a {
+  margin: 1.5rem 0;
+  color: #181c2e;
+  text-decoration: underline;
+}
+
+/* Estilização para o link quando passa o mouse */
+.login a:hover {
+  color: #b1abab; /* Cor de destaque */
+}
